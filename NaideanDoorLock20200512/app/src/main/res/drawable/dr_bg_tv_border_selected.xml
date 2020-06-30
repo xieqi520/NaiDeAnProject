@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape>
+            <!-- 描边 -->
+            <stroke
+                android:width="1dp"
+                android:color="#53CBF3" />
+            <!-- 实心 -->
+            <solid android:color="#53CBF3"/>
+            <!-- 圆角 -->
+            <corners
+                android:radius="5dp" />
+
+
+            <padding
+                android:left="@dimen/dp_6"
+                android:top="@dimen/dp_6"
+                android:right="@dimen/dp_6"
+                android:bottom="@dimen/dp_6" />
+        </shape>
+    </item>
+    <item android:state_selected="false">
+        <shape>
+            <!-- 描边 -->
+            <stroke
+                android:width="1dp"
+                android:color="#d9d9d9" />
+            <!-- 实心 -->
+            <solid android:color="@color/white"/>
+            <!-- 圆角 -->
+            <corners
+                android:radius="5dp" />
+
+
+            <padding
+                android:left="@dimen/dp_6"
+                android:top="@dimen/dp_6"
+                android:right="@dimen/dp_6"
+                android:bottom="@dimen/dp_10" />
+        </shape>
+    </item>
+</selector>

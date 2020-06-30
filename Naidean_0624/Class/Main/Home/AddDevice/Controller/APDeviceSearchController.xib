@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="APDeviceSearchController">
+            <connections>
+                <outlet property="confirmBtn" destination="PXs-f4-mqD" id="uf2-9h-c9k"/>
+                <outlet property="countDownLabel" destination="3Fj-zw-qb8" id="ycx-GF-t0M"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXs-f4-mqD">
+                    <rect key="frame" x="20" y="529" width="335" height="48"/>
+                    <color key="backgroundColor" red="1" green="0.42745098040000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="FAg-jC-F1S"/>
+                    </constraints>
+                    <state key="normal" title="确认连接成功">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmAction:" destination="-1" eventType="touchUpInside" id="htU-Vc-FfB"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="base1" translatesAutoresizingMaskIntoConstraints="NO" id="H8i-O7-5Ta">
+                    <rect key="frame" x="100.5" y="140" width="174" height="172"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fj-zw-qb8">
+                    <rect key="frame" x="168" y="208" width="39" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="秒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uN-fF-mjr">
+                    <rect key="frame" x="212" y="222" width="14.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余确认时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoM-AR-qxN">
+                    <rect key="frame" x="150.5" y="254" width="74" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请确认您已连接你的工作WIFI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOb-tc-g8J">
+                    <rect key="frame" x="94" y="342" width="186" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tOb-tc-g8J" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="1G4-H7-7Mz"/>
+                <constraint firstItem="LoM-AR-qxN" firstAttribute="top" secondItem="3Fj-zw-qb8" secondAttribute="bottom" constant="10" id="1k7-dB-ryd"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="PXs-f4-mqD" secondAttribute="bottom" constant="90" id="3BD-SA-6sy"/>
+                <constraint firstItem="LoM-AR-qxN" firstAttribute="centerX" secondItem="H8i-O7-5Ta" secondAttribute="centerX" id="6QW-TT-q63"/>
+                <constraint firstItem="9uN-fF-mjr" firstAttribute="bottom" secondItem="3Fj-zw-qb8" secondAttribute="bottom" constant="-5" id="8hW-Ey-J74"/>
+                <constraint firstItem="H8i-O7-5Ta" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="120" id="J8Y-Pr-hIw"/>
+                <constraint firstAttribute="trailing" secondItem="PXs-f4-mqD" secondAttribute="trailing" constant="20" id="JhJ-2m-e1G"/>
+                <constraint firstItem="tOb-tc-g8J" firstAttribute="top" secondItem="H8i-O7-5Ta" secondAttribute="bottom" constant="30" id="MDf-9R-QPK"/>
+                <constraint firstItem="H8i-O7-5Ta" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="NwH-TJ-GJp"/>
+                <constraint firstItem="PXs-f4-mqD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="cqM-vu-RtN"/>
+                <constraint firstItem="3Fj-zw-qb8" firstAttribute="centerX" secondItem="H8i-O7-5Ta" secondAttribute="centerX" id="fPL-n3-vIH"/>
+                <constraint firstItem="9uN-fF-mjr" firstAttribute="leading" secondItem="3Fj-zw-qb8" secondAttribute="trailing" constant="5" id="gWJ-1S-zan"/>
+                <constraint firstItem="3Fj-zw-qb8" firstAttribute="centerY" secondItem="H8i-O7-5Ta" secondAttribute="centerY" id="hNg-Rp-RyP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="20.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="base1" width="174" height="172"/>
+    </resources>
+</document>

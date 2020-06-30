@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/clContent"
+    android:padding="@dimen/dp_10"
+    >
+
+    <ImageView
+        android:id="@+id/ivHead"
+        android:layout_width="@dimen/dp_head"
+        android:layout_height="@dimen/dp_head"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_head_default"
+        />
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/ivHead"
+        app:layout_constraintTop_toTopOf="@id/ivHead"
+        app:layout_constraintBottom_toBottomOf="@id/ivHead"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:lineSpacingExtra="@dimen/dp_3"
+        android:textSize="@dimen/font_14"
+        android:text="家大门"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/ivHead"
+        app:layout_constraintBottom_toBottomOf="@id/ivHead"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_check_n"
+        />
+
+</android.support.constraint.ConstraintLayout>

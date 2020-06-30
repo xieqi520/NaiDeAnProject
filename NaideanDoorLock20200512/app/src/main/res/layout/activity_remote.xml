@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f5f9"
+    android:orientation="vertical">
+
+    <com.saiyi.naideanlock.topbar.TopToolBar
+        android:id="@+id/remote_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/home_page_bg">
+
+            <!--<ProgressBar-->
+                <!--android:id="@+id/remote_pgb_battery"-->
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--android:layout_width="@dimen/size_40"-->
+                <!--android:layout_height="@dimen/size_15"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginTop="@dimen/size_10"-->
+                <!--android:max="100"-->
+                <!--android:progress="50"-->
+                <!--android:progressDrawable="@drawable/layer_progressbar" />-->
+
+            <TextView
+                android:id="@+id/remote_power_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_5"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_alignParentRight="true"
+                android:text="设备电量：56%"
+                android:textColor="@android:color/white" />
+
+            <FrameLayout
+                android:id="@+id/lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lock_bg" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/lock_information" />
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/remote_lock_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/lock"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/size_21"
+                android:text="Da门锁"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/word_size_14" />
+
+            <TextView
+                android:id="@+id/remote_device_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lock"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_22"
+                android:text="@string/activated"
+                android:textColor="@color/color_fb7f1f"
+                android:textSize="@dimen/word_size_20" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/size_32"
+            android:layout_marginTop="@dimen/size_14"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/remote_open_btn"
+                android:layout_width="@dimen/size_196"
+                android:layout_height="@dimen/size_48"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size_8"
+                android:background="@drawable/shape_open_camera"
+                android:text="@string/open_camera"
+                android:textColor="@color/color_4a4c57"
+                android:textSize="@dimen/word_size_14" />
+
+            <EditText
+                android:id="@+id/remote_pass_ed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginLeft="@dimen/size_15"
+                android:layout_marginRight="@dimen/size_15"
+                android:layout_marginTop="@dimen/size_22"
+                android:background="@drawable/shape_pass_word"
+                android:hint="@string/open_lock_pass_word"
+                android:maxLength="18"
+                android:paddingLeft="@dimen/size_15"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/color_c4c4c4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginLeft="@dimen/size_15"
+                android:layout_marginRight="@dimen/size_15"
+                android:layout_marginTop="@dimen/size_20"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/remote_refuse_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_login_btn"
+                    android:text="@string/refuse"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/word_size_18" />
+
+                <Button
+                    android:id="@+id/remote_open_lock_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_register_btn"
+                    android:text="@string/open_lock_remote"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/word_size_18" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

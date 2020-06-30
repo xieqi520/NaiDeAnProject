@@ -1,0 +1,190 @@
+//
+//  PrefixHeader.pch
+//  Naidean
+//
+//  Created by xujun on 2018/1/3.
+//  Copyright © 2018年 com.saiyikeji. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+//解决 OC和C++混编 系统类NSObjCRuntime, NSZone等报错问题
+#ifdef __OBJC__
+
+#import "JSONKit.h"
+#import "UIViewExt.h"
+#import "UIView+ViewController.h"
+
+#import "WLSQXcloulink.h"
+//#import "JKDB_SmartList.h"
+#import "WLSQCameraControl.h"
+#import <sqlite3.h>
+
+#endif
+
+
+#import "PrefixHeader.h"
+#import "HttpTool.h"
+#import "BaseNavController.h"
+#import "UIColor+changeColor.h"
+#import "HomeController.h"
+#import "AppDelegate.h"
+#import "AppDelegate+Root.h"
+#import "LoglistController.h"
+#import "PhotolistController.h"
+#import "RemotecontrolController.h"
+#import "UsersetController.h"
+#import "UsermessageController.h"
+#import "ManagerController.h"
+#import "UserManger.h"
+#import <Masonry.h>
+#import <MJRefresh.h>
+#import <IQKeyboardManager.h>
+#import <MBProgressHUD.h>
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
+#import <Masonry.h>
+#import <MBProgressHUD+JDragon.h>
+#import "MJExtension.h"
+#import "Helper.h"
+#import "UserManageClass.h"
+#import "DeviceModel.h"
+#import "SYTimePickerView.h"
+#import "SYNotifications.h"
+#import "SYBLEManager.h"
+
+//线上
+//#define  NETWORK_LINE_URL   @"http://123.207.96.62:8080"
+#define  NETWORK_LINE_URL   @"http://123.207.96.62:80"
+//内网
+//#define  NETWORK_TEST_URL   @"http://172.16.10.103:8086/Tonometer/app"
+//http://58.250.30.13:13703
+//http://218.17.119.242:13703
+//http://172.16.2.137:13703
+#define  NETWORK_TEST_URL   @"http://218.17.119.242:13703"
+//用户头像地址
+#define  NETWORK_USER_IMG_URL @"http://218.17.119.242:8086/image/Tonometer"
+
+//网络请求地址
+//#define  NETWORK_REQUEST_URL(URL)  [NSString stringWithFormat:@"%@/%@",NETWORK_TEST_URL,URL]
+#define  NETWORK_REQUEST_URL(URL)  [NSString stringWithFormat:@"%@/%@",NETWORK_TEST_URL,URL]
+
+
+//获取验证码
+//#define GET_CODE_URL       @"latch-web/latch_app/getIdentify"
+#define GET_CODE_URL         @"other/sms/sendSmsCode"
+//注册
+//#define USER_GEGISTER_URL  @"latch-web/latch_app/register"
+#define USER_GEGISTER_URL  @"app/user/regUser"
+//用户登录
+//#define USER_LOGIN_URL     @"latch-web/latch_app/login"
+#define USER_LOGIN_URL @"app/user/login"
+//登录校验
+#define USER_CheckLogin_URL  @"app/user/checkLogin"
+//自动登录校验/更新
+#define USER_AutoLogin_URL  @"app/user/autoLogin"
+//找回密码
+//#define FIND_PSWORD_URL    @"latch-web/latch_app/findBack"
+#define FIND_PSWORD_URL    @"app/user/updatePasswordByCode"
+//更改绑定电话
+#define REBINDING_USER_PHONE  @"app/user/updatePhone"
+
+//验证当前绑定电话
+#define VERIFY_USER_ACCOUNT  @"app/user/checkUserAccount"
+
+//更新用户信息
+//#define USER_UPDATE_URL    @"latch-web/latch_app/updateUser"
+#define USER_UPDATE_URL    @"app/user/updateUserInfo"
+//上传头像
+//#define UPLOAD_PIC_URL     @"latch-web/latch_app/addHeadPicture"
+#define UPLOAD_PIC_URL     @"other/file/upload/image"
+//查询用户绑定设备
+#define GET_DEVICE_URL     @"app/device/getAll"
+
+//查询版本信息
+#define QUERY_VERSION_URL  @"latch-web/latch_app/findedition"
+
+//添加设备
+#define BINDING_DEVICES_URL @"app/device/addDevice"
+
+//授权设备
+#define AUTHORIZE_DEVICES_URL @"app/binding/addBinding"
+
+//删除设备
+#define Delete_Device_URL  @"app/device/deleteDevice"
+//取消授权
+#define CANCEL_BINDING_URL  @"app/binding/deleteBinding"
+
+//修改设备名称
+#define CHANGE_DEVICE_NAME_URL @"app/device/updateDeviceName"
+
+//wifi开锁
+#define LOCK_ON_URL         @"app/device/openWifiLock"
+
+//管理员的授权用户列表
+#define GET_AUTHUSER_URL    @"app/binding/selectAll"
+
+//通过手机号搜索用户
+#define SEARCH_AUTHUSER_URL    @"app/user/selectUserByPhone"
+
+//上传开锁记录
+#define UPLOAD_LOG_URL      @"app/log/addBleLockLog"
+
+//删除一条开锁记录
+#define DELETE_LOG_URL      @"app/log/deleteLockLogById"
+
+//删除所有开锁记录
+#define DELETE_ALL_LOG_URL  @"app/log/deleteLockLogAll"
+
+//查询开锁记录
+#define GET_ALL_LOG_URL     @"app/log/selectLockLog"
+
+//上传拍照照片
+#define UPLOD_PIC_URL       @"latch-web/latch_app/addPicture"
+
+//删除拍照照片（删一张）
+#define DELETE_PIC_URL      @"latch-web/latch_app/deletePic"
+
+//删除拍照照片（删全部）
+#define DELETE_ALL_PIC_URL  @"latch-web/latch_app/deletePicAll"
+
+//查询拍照照片
+#define GET_ALL_PIC_URL     @"app/log/selectPics"
+
+//授权用户重命名
+#define UPDATE_REMARK_URL   @"app/binding/updateMomeName"
+
+//好友权限设置
+#define SET_PERMISSION_URL  @"latch-web/latch_app/setting"
+
+//添加摄像头信息
+#define ADD_CAMERA_INFO_URL @"latch-web/latch_app/addCamera"
+
+//设置无人模式
+#define SET_NO_MODE_UEL     @"latch-web/latch_app/setNoMode"
+
+//设置防撬报警
+#define SET_PRTECT_MODE_URL @"latch-web/latch_app/setPryMode"
+
+//设置低电提醒
+#define SET_LOWPOWER_MODE_URL @"latch-web/latch_app/setLowMode"
+
+//设置报警提醒
+#define SET_ALARM_REMINDER_URL @"app/device/updateAlarm"
+
+//添加保姆
+#define ADD_NURSE_URL    @"app/binding/updateBinding"
+
+//远程开锁密码设置
+#define SET_DEVICE_PSWORD_URL @"app/device/updateOpenPwd"
+
+//查询远程开锁密码
+#define SEARCH_DEVICE_PSWORD_URL @"latch-web/latch_app/findPwd"
+
+
+
+
+
+#endif /* PrefixHeader_pch */

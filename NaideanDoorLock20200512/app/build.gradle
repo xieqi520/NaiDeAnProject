@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.saiyi.naideanlock"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 31
+        versionName "1.2.12"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+//    signingConfigs {
+//        release {
+//            keyAlias 'naidean'
+//            keyPassword 'naidean'
+//            storeFile file('../app/sigeKey/naidean.jks')
+//            storePassword 'naidean'
+//        }
+//    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            buildConfigField "boolean", "IS_DEBUG", "false"
+        }
+
+//        debug {
+//            minifyEnabled false
+//            buildConfigField "boolean", "IS_DEBUG", "false"
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+//
+//        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+
+            res.srcDirs = [
+                    'src/main/res',
+                    'src/main/res/ui',
+                    'src/main/res/ui/lp',
+                    'src/main/res/ui/lp/layout',
+            ]
+        }
+    }
+}
+
+dependencies {
+//    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestCompile("com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion", {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation "com.android.support.test:runner:$rootProject.ext.runnerVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion"
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+
+    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.constraintLayoutVersion"
+
+    testImplementation "junit:junit:$rootProject.junitVersion"
+
+    //http网络请求框架
+//    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+//    implementation 'com.squareup.okio:okio:1.5.0'
+//    implementation 'com.zhy:okhttputils:2.6.2'
+
+    //圆形ImageView框架
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    //环形进度条
+    implementation 'com.czp.arcProgressBar:ArcProgressBar:1.0.1'
+    //事件巴士 用于事件分发
+//    implementation 'org.greenrobot:eventbus:3.0.0'
+    //蓝牙框架
+    implementation 'com.inuker.bluetooth:library:1.4.0'
+    //视图列表框架
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+
+    //图片下载框架
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.12'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+
+    implementation project(':BabyLib')
+    implementation project(':itemtouchhelperextension')
+    implementation project(':PhotoPicker')
+    implementation project(':xrecyclerview')
+    implementation project(':Zxing')
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="234"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在搜索,请打开设备靠近手机" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXO-ix-zPr">
+                    <rect key="frame" x="117.5" y="10" width="140" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="CSP-Ub-HPx"/>
+                        <constraint firstAttribute="height" constant="50" id="X73-09-mbq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.58431372549019611" green="0.58431372549019611" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqu-m7-rUd">
+                    <rect key="frame" x="125.5" y="65" width="124" height="124"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="124" id="iKt-jj-7yO"/>
+                        <constraint firstAttribute="width" constant="124" id="nx8-g3-mZw"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="bluetooth_mode"/>
+                    <connections>
+                        <action selector="searchAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="8g2-TT-mBc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uqu-m7-rUd" firstAttribute="centerX" secondItem="LXO-ix-zPr" secondAttribute="centerX" id="29s-Jb-ql1"/>
+                <constraint firstItem="LXO-ix-zPr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="aUc-Vy-Qcv"/>
+                <constraint firstItem="LXO-ix-zPr" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="k8Y-8t-Omk"/>
+                <constraint firstItem="uqu-m7-rUd" firstAttribute="top" secondItem="LXO-ix-zPr" secondAttribute="bottom" constant="5" id="lgz-vT-fbZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="NotesLabel" destination="LXO-ix-zPr" id="xI2-I6-woV"/>
+            </connections>
+            <point key="canvasLocation" x="-638" y="-260"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bluetooth_mode" width="124" height="124"/>
+    </resources>
+</document>

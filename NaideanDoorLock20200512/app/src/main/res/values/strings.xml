@@ -1,0 +1,214 @@
+<resources>
+    <string name="app_name">耐得安</string>
+
+    <string name="can_not_support">您的手机不能正常使用本APP(系统版本过低或不支持蓝牙4.0).</string>
+
+    <string name="close_ble_notice">关闭蓝牙蓝牙后，您将不能正常使用这个APP.</string>
+    <string name="refuse_location_permission">拒绝这个权限，您将不能扫描到设备</string>
+    <string name="refuse_permission">拒绝这些权限，您将不能正常使用本APP</string>
+    <string name="refuse_permission_already">您拒绝了权限</string>
+    <string name="scanning">正在搜索，请稍后\u2026</string>
+    <string name="connecting">正在连接\u2026</string>
+    <string name="connected">连接</string>
+    <string name="disconnected">断开</string>
+
+    <!--Service提示-->
+    <string name="no_net">当前网络不可用，请检查网络后重试</string>
+    <string name="mobile_net">手机网络已连接</string>
+    <string name="wifi_net">wifi网络已连接</string>
+
+    <!--启动页-->
+    <string name="launcher_welcome_use">欢迎使用耐得安门锁系统</string>
+
+    <!--登录页面-->
+    <string name="login_lock">门锁</string>
+    <string name="login_phone_number">手机号码</string>
+    <string name="login_pass_world">输入登录密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="forget">忘记密码</string>
+    <string name="reset_password">重置密码</string>
+    <string name="username_is_empty">请输入用户名</string>
+    <string name="password_is_empty">请输入密码</string>
+    <string name="username_is_wrong">用户名格式不对</string>
+    <string name="right_username">请输入正确的电话号码</string>
+
+    <!--注册页面-->
+    <string name="count_down">%d(S)</string>
+    <string name="verification_code">获取验证码</string>
+    <string name="enter_verification_code">验证码</string>
+    <string name="please_enter_password">请输入密码</string>
+    <string name="please_enter_sure_password">请输入确认密码</string>
+    <string name="password_short">请输入6位或6位以上密码</string>
+    <string name="password_wrong">两次输入的密码不一致</string>
+
+    <!--控制面板页-->
+    <string name="select_unlocking_mode">开锁方式选择</string>
+    <string name="camera">拍照相关</string>
+    <string name="administration">授权管理</string>
+    <string name="open_lock">开锁</string>
+    <string name="open_remote_lock">远程开锁</string>
+    <string name="set">设置</string>
+    <string name="record">开锁记录</string>
+    <string name="information">用户信息</string>
+    <string name="no_device">无设备</string>
+    <string name="add_device">请点击右上角添加设备</string>
+    <string name="control_panel">控制面板</string>
+    <string name="add_new_device">添加新设备</string>
+    <string name="delete_device_notice">确定删除设备吗？</string>
+    <string name="rename_device">设备重命名</string>
+    <string name="input_device_name">请输入设备名称</string>
+    <string name="input_device_pwd">请输入设备密码</string>
+
+
+    <!--用户信息页面-->
+    <string name="change_avatar">更换头像</string>
+    <string name="change_phone_number">更改绑定电话</string>
+    <string name="update">查看更新</string>
+    <string name="about_us">关于我们</string>
+    <string name="about_protocol">APP隐私政策</string>
+    <string name="help">用户帮助</string>
+    <string name="quit">退出登录</string>
+    <string name="user_information">用户信息</string>
+    <string name="account_number">账号：</string>
+    <string name="personal_info">个人信息</string>
+    <string name="save">保存</string>
+    <string name="name_setting">名字设置</string>
+    <string name="next">下一步</string>
+    <string name="input_new_phone">请输入新的手机号</string>
+
+    <!--wifi设置账号密码 连接页面-->
+    <string name="wifi_connect">链接WLAN</string>
+    <string name="ap_connect">连接设备热点</string>
+    <string name="ap_connect_notice">请确认在\'设置\'中已连接设备热点</string>
+    <string name="ap_connected">确定已连接</string>
+    <string name="choose_wifi">选择一个可用的WLAN，让你的设备接入网络</string>
+    <string name="please_choose_wifi">请选择WLAN</string>
+    <string name="please_enter_wifi_pass">输入密码</string>
+    <string name="connect">链接</string>
+    <string name="wifi_connect_top">WIFI链接</string>
+
+    <!--权限管理界面-->
+    <string name="authorization_admin">管理员</string>
+    <string name="change_name">更名</string>
+    <string name="delete">删除</string>
+    <string name="rename">重命名</string>
+    <string name="permission_management">权限管理</string>
+    <string name="add_to">添加</string>
+    <string name="sure_delete">是否删除该用户？</string>
+    <string name="please_enter_name_toast">请输入备注名</string>
+    <string name="please_enter_name">请输入备注名后在点击确定按钮</string>
+    <string name="search">搜索</string>
+    <string name="nanny">临时管理员</string>
+    <string name="general_admin">普通管理员</string>
+    <string name="unlock_time_period">开锁时间</string>
+    <string name="unlock_time_frame">开锁时段</string>
+
+
+    <!--wifi正在链接页面-->
+    <string name="wifi_connection">正在链接WLAN</string>
+    <string name="wifi_prompt">设备正在链接，请不要断开网络。</string>
+    <string name="wifi_cancel">取消</string>
+    <string name="device_connect">设备链接</string>
+
+    <!--搜索蓝牙页面 添加设备-->
+    <string name="is_searching">正在搜索，请打开设备靠近手机</string>
+    <string name="note_searching">点击下面蓝牙图标，搜索附近蓝牙设备</string>
+    <string name="close_phone">靠近手机</string>
+    <string name="cancel_binding">取消绑定</string>
+    <string name="add">添加</string>
+    <string name="device_add">设备添加</string>
+    <string name="add_sure">是否确定添加此蓝牙设备？</string>
+
+
+    <!--相关设置页面-->
+    <string name="unmanned_mode_warn">无人模式报警</string>
+    <string name="tamper_warn">防撬报警</string>
+    <string name="no_power_warn">低电提醒</string>
+    <string name="remote_unlocking_pass">远程开锁密码</string>
+    <string name="unlocking_set">开锁密码设置</string>
+    <string name="about_setting">相关设置</string>
+    <string name="reset_network">重新配网</string>
+
+    <!--开锁密码页面-->
+    <string name="new_pass_one">新密码</string>
+    <string name="new_pass_two">再次输入密码</string>
+    <string name="sure">确定</string>
+    <string name="open_lock_pass">开锁密码</string>
+
+    <!--照片页面-->
+    <string name="photo_time">拍照时间</string>
+    <string name="about_photo">拍照相关</string>
+
+
+    <!--远程开锁页面-->
+    <string name="activated">已激活</string>
+    <string name="remote_camera">摄像头</string>
+    <string name="disconnect_camera">摄像头已断开</string>
+    <string name="connect_camera">连接摄像头</string>
+    <string name="open_camera">开启摄像头</string>
+    <string name="close_camera">关闭摄像头</string>
+    <string name="open_lock_pass_word">输入开锁密码</string>
+    <string name="refuse">拒绝</string>
+    <string name="open_lock_remote">开锁</string>
+    <string name="remote_unlocking">远程开锁</string>
+
+
+    <!--添加管理员页面-->
+    <string name="complete">完成</string>
+    <string name="add_admin">添加管理员</string>
+    <string name="sorry_already_add">该用户已分享</string>
+
+    <!--链接模式页面-->
+    <string name="model_choose">链接模式</string>
+
+    <!--开锁记录页面-->
+    <string name="unlocking_record">开锁记录</string>
+    <string name="empty">清空</string>
+    <string name="sure_empty">是否清空开锁记录？</string>
+    <string name="sure_delete_unlocking">是否删除该开锁记录？</string>
+
+    <!--联系人页面-->
+    <string name="contacts">联系人</string>
+    <string name="enter_phone_number">输入电话号码</string>
+    <string name="warming">提示：</string>
+    <string name="warming_message">是否放弃电话号码修改？</string>
+    <string name="message">请输入电话号码</string>
+    <string name="error_message">请输入有效的电话号码</string>
+    <string name="everyday">每天</string>
+
+    <string name="wifi_list">设备列表</string>
+    <string name="save_success">保存成功</string>
+    <string name="general_manager">普通管理员</string>
+    <string name="setting">设置</string>
+    <string name="devcapacity">设备电量</string>
+    <string name="lowcapacity_plschangebattery">电量低，请更换电池</string>
+    <string name="lowcapacity_dontunlock">电量低，无法开锁</string>
+    <string name="disconnectdev">未连接设备</string>
+    <string name="login_auth">登录验证</string>
+    <string name="connectdevice">连接</string>
+    <string name="nolicenseunlock">无开锁权限</string>
+    <string name="logintimeout">登录超时</string>
+    <string name="timeout">超时</string>
+
+    <string name="application_protocol_information">
+        \n\n\t\t本应用尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，本应用会按照本隐私权政策的规定使用和披露您的个人信息。但本应用将以高度的勤勉、审慎义务对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，本应用不会将这些信息对外披露或向第三方提供。本应用会不时更新本隐私权政策。 您在同意本应用服务使用协议之时，即视为您已经同意本隐私权政策全部内容。本隐私权政策属于本应用服务使用协议不可分割的一部分。\n\n\n
+        <b>1. 适用范围</b>\n\n
+        (a) 在您注册本应用帐号时，您根据本应用要求提供的个人注册信息；\n\n
+        <b>2. 信息使用</b>\n\n
+        (a)本应用不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息，除非事先得到您的许可，或该第三方和本应用（含本应用关联公司）单独或共同为您提供服务，且在该服务结束后，其将被禁止访问包括其以前能够访问的所有这些资料。\n
+        (b) 本应用亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息。任何本应用平台用户如从事上述活动，一经发现，本应用有权立即终止与该用户的服务协议。\n\n
+        <b>3. 信息披露</b>\n\n
+        (a) 本软件不会将您的信息披露给不受信任的第三方。\n
+        (b)根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；\n\n
+        <b>4. 信息存储和交换</b>\n\n
+        本应用收集的有关您的信息和资料将保存在本应用及（或）其关联公司的服务器上，这些信息和资料可能传送至您所在国家、地区或本应用收集信息和资料所在地的境外并在境外被访问、存储和展示。\n\n
+        <b>5. 信息安全</b>\n\n
+        (a) 本应用帐号均有安全保护功能，请妥善保管您的用户名及密码信息。\n\n
+        <b>6.本隐私政策的更改</b>\n\n
+        (a)如果决定更改隐私政策，我们会在本政策中、本公司网站中以及我们认为适当的位置发布这些更改，以便您了解我们如何收集、使用您的个人信息，哪些人可以访问这些信息，以及在什么情况下我们会透露这些信息。\n
+        (b)本公司保留随时修改本政策的权利，因此请经常查看。如对本政策作出重大更改，本公司会通过网站通知的形式告知。\n\n
+        为防止向第三方泄露自己的个人信息，如联络方式或者邮政地址，请您妥善保护自己的个人信息。\n
+    </string>
+
+</resources>

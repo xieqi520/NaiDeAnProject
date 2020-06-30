@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BabyLib/BabyLib.iml" filepath="$PROJECT_DIR$/BabyLib/BabyLib.iml" group="NaideanDoorLock20200512/BabyLib" />
+      <module fileurl="file://$PROJECT_DIR$/NaideanDoorLock20200512.iml" filepath="$PROJECT_DIR$/NaideanDoorLock20200512.iml" group="NaideanDoorLock20200512" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoPicker/PhotoPicker.iml" filepath="$PROJECT_DIR$/PhotoPicker/PhotoPicker.iml" group="NaideanDoorLock20200512/PhotoPicker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/privacyMoudle/PrivacyMoudle.iml" filepath="$PROJECT_DIR$/.idea/modules/privacyMoudle/PrivacyMoudle.iml" group="NaideanDoorLock20200512/privacyMoudle" />
+      <module fileurl="file://$PROJECT_DIR$/Zxing/Zxing.iml" filepath="$PROJECT_DIR$/Zxing/Zxing.iml" group="NaideanDoorLock20200512/Zxing" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="NaideanDoorLock20200512/app" />
+      <module fileurl="file://$PROJECT_DIR$/itemtouchhelperextension/itemtouchhelperextension.iml" filepath="$PROJECT_DIR$/itemtouchhelperextension/itemtouchhelperextension.iml" group="NaideanDoorLock20200512/itemtouchhelperextension" />
+      <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" group="NaideanDoorLock20200512/xrecyclerview" />
+    </modules>
+  </component>
+</project>

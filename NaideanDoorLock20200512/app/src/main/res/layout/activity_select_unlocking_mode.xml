@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/base_toolbar"/>
+
+    <ImageView
+        android:id="@+id/ivWifi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintHeight_percent="0.5"
+        android:background="@drawable/bg_connect_mode_wifi"
+        />
+    <ImageView
+        android:id="@+id/ivBle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ivWifi"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/bg_connect_mode_ble"
+        />
+
+    <TextView
+        android:id="@+id/tvWifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/btn_wifi"
+        android:text="wifi开锁\n适用于远程开锁"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/font_14"
+        android:drawablePadding="@dimen/dp_8"
+        app:layout_constraintTop_toTopOf="@id/ivWifi"
+        app:layout_constraintBottom_toBottomOf="@id/ivWifi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/tvBle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/btn_ble"
+        android:text="蓝牙开锁\n适用于在家附近开锁"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/font_14"
+        android:drawablePadding="@dimen/dp_8"
+        app:layout_constraintTop_toTopOf="@id/ivBle"
+        app:layout_constraintBottom_toBottomOf="@id/ivBle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</android.support.constraint.ConstraintLayout>

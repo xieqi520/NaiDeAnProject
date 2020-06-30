@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseLockTypeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="WF6-6J-Nvh">
+                    <rect key="frame" x="0.0" y="20" width="375" height="323.5"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="Rp9-Ed-ahC">
+                    <rect key="frame" x="0.0" y="343.5" width="375" height="323.5"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIh-uw-GA4">
+                    <rect key="frame" x="125.5" y="76" width="124" height="124"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="124" id="PqA-at-BEX"/>
+                        <constraint firstAttribute="height" constant="124" id="ubY-Bn-oxq"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="wifi_mode"/>
+                    <connections>
+                        <action selector="wifiBtnDidClicked:" destination="-1" eventType="touchUpInside" id="3Yv-9b-vZR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hh-Tr-AEI">
+                    <rect key="frame" x="125.5" y="390.5" width="124" height="124"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="124" id="L59-QX-AQw"/>
+                        <constraint firstAttribute="width" constant="124" id="Re2-F0-4c3"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="bluetooth_mode"/>
+                    <connections>
+                        <action selector="btBtnDidClicked:" destination="-1" eventType="touchUpInside" id="hRu-50-hLM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WiFi开锁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-gc-d9m">
+                    <rect key="frame" x="153" y="212" width="69" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="3fV-e8-QU7"/>
+                        <constraint firstAttribute="height" constant="21" id="AVz-Of-oBd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="适用于远程开锁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxH-PR-Wcb">
+                    <rect key="frame" x="142" y="237" width="91" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="bG5-3g-PVs"/>
+                        <constraint firstAttribute="height" constant="18" id="eAd-hU-86O"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蓝牙开锁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgH-F4-RST">
+                    <rect key="frame" x="157.5" y="526.5" width="60" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="nFJ-z3-N7L"/>
+                        <constraint firstAttribute="height" constant="21" id="xaQ-ha-cjr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="适用于在家附近开锁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CJ-rC-Qkt">
+                    <rect key="frame" x="129" y="551.5" width="117" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="117" id="Gw2-je-o9K"/>
+                        <constraint firstAttribute="height" constant="18" id="HT6-H9-U5o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6hh-Tr-AEI" firstAttribute="top" secondItem="WF6-6J-Nvh" secondAttribute="bottom" constant="47" id="1jz-cV-zI5"/>
+                <constraint firstItem="WF6-6J-Nvh" firstAttribute="leading" secondItem="m38-4n-aS4" secondAttribute="leading" id="4X6-kk-CFn"/>
+                <constraint firstItem="Rp9-Ed-ahC" firstAttribute="top" secondItem="WF6-6J-Nvh" secondAttribute="bottom" id="8MA-Mu-Dzm"/>
+                <constraint firstItem="xgH-F4-RST" firstAttribute="top" secondItem="6hh-Tr-AEI" secondAttribute="bottom" constant="12" id="98K-72-yab"/>
+                <constraint firstItem="Rp9-Ed-ahC" firstAttribute="trailing" secondItem="m38-4n-aS4" secondAttribute="trailing" id="E62-nh-adJ"/>
+                <constraint firstItem="m38-4n-aS4" firstAttribute="bottom" secondItem="Rp9-Ed-ahC" secondAttribute="bottom" id="N1z-rw-dPo"/>
+                <constraint firstItem="eIh-uw-GA4" firstAttribute="top" secondItem="m38-4n-aS4" secondAttribute="top" constant="56" id="STf-Iz-QJk"/>
+                <constraint firstItem="9CJ-rC-Qkt" firstAttribute="centerX" secondItem="6hh-Tr-AEI" secondAttribute="centerX" id="UgN-iC-dYx"/>
+                <constraint firstItem="Rp9-Ed-ahC" firstAttribute="leading" secondItem="m38-4n-aS4" secondAttribute="leading" id="Yjz-cB-wEp"/>
+                <constraint firstItem="9CJ-rC-Qkt" firstAttribute="top" secondItem="xgH-F4-RST" secondAttribute="bottom" constant="4" id="ZJu-QK-Y1d"/>
+                <constraint firstItem="WF6-6J-Nvh" firstAttribute="top" secondItem="m38-4n-aS4" secondAttribute="top" id="ZK1-Hd-P58"/>
+                <constraint firstItem="Rp9-Ed-ahC" firstAttribute="height" secondItem="WF6-6J-Nvh" secondAttribute="height" id="ZNi-aJ-apo"/>
+                <constraint firstItem="AxH-PR-Wcb" firstAttribute="centerX" secondItem="eIh-uw-GA4" secondAttribute="centerX" id="aGg-ZO-eZc"/>
+                <constraint firstItem="xgH-F4-RST" firstAttribute="centerX" secondItem="6hh-Tr-AEI" secondAttribute="centerX" id="cTH-wr-MPH"/>
+                <constraint firstItem="6hh-Tr-AEI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fwg-Yn-suA"/>
+                <constraint firstItem="eIh-uw-GA4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="m2a-8o-IQN"/>
+                <constraint firstItem="9sc-gc-d9m" firstAttribute="centerX" secondItem="eIh-uw-GA4" secondAttribute="centerX" id="oIq-6f-AdR"/>
+                <constraint firstItem="Rp9-Ed-ahC" firstAttribute="top" secondItem="WF6-6J-Nvh" secondAttribute="bottom" id="rJH-HE-Yvp"/>
+                <constraint firstItem="9sc-gc-d9m" firstAttribute="top" secondItem="eIh-uw-GA4" secondAttribute="bottom" constant="12" id="svB-5L-CoN"/>
+                <constraint firstItem="WF6-6J-Nvh" firstAttribute="trailing" secondItem="m38-4n-aS4" secondAttribute="trailing" id="xRQ-3R-i5A"/>
+                <constraint firstItem="AxH-PR-Wcb" firstAttribute="top" secondItem="9sc-gc-d9m" secondAttribute="bottom" constant="4" id="y4k-OW-P1L"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="m38-4n-aS4"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg2" width="375" height="290"/>
+        <image name="bg3" width="375" height="290"/>
+        <image name="bluetooth_mode" width="124" height="124"/>
+        <image name="wifi_mode" width="124" height="124"/>
+    </resources>
+</document>

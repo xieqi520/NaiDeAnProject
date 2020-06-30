@@ -1,0 +1,3 @@
+include ':privacyMoudle'
+include ':PrivacyMoudle'
+include ':app',':xrecyclerview',':itemtouchhelperextension',':BabyLib',':PhotoPicker',':Zxing'

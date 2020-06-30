@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp_30"
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="头像"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tvInto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:gravity="right"
+            android:textColor="@color/gray5"
+            android:layout_centerVertical="true"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/font_14" />
+
+        <ImageView
+            android:id="@+id/ivHead"
+            android:layout_width="@dimen/dp_head"
+            android:layout_height="@dimen/dp_head"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tvInto"
+            android:layout_marginRight="@dimen/dp_10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_head_default"
+            />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eaeaea" />
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvSexLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tvNickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:gravity="right"
+            android:textColor="@color/gray5"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+
+
+</LinearLayout>

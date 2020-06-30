@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:id="@+id/clContent"
+    android:paddingLeft="@dimen/dp_6"
+    android:paddingRight="@dimen/dp_6">
+
+
+
+    <ImageView
+        android:id="@+id/ivPic"
+        android:layout_width="@dimen/dp_head"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_head_default" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/ivPic"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivPic"
+        app:layout_constraintBottom_toBottomOf="@id/ivPic"
+        android:paddingLeft="@dimen/dp_10"
+        android:textSize="@dimen/font_14"
+        android:paddingBottom="@dimen/dp_8"
+        tools:text="IBK....."
+        android:textColor="@color/black" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

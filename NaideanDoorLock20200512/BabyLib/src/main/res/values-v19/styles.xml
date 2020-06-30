@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Status Bar 透明，多用于解决图片作为整体背景时，沉浸式状态栏的问题
+        <item name="android:windowTranslucentStatus">true</item>-->
+        <!-- Navigation Bar 【false适配某些虚拟按键手机】-->
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+
+</resources>
